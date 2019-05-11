@@ -1,0 +1,20 @@
+html{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Raleway', sans-serif;
+}
+
+
+.navbar{
+    border-bottom: #008ed6 3px solid;
+    opacity: 0.9;
+}
+
+.navbar-brand {
+    max-height: 50px;
+    max-width: 40%; 
+    overflow: visible;
+    padding-top: 0;
+    padding-bottom: 0; 
+}
