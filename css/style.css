@@ -168,10 +168,6 @@ body {
     background-size: cover;
   }
   
-  .carousel-image-3 {
-    background: url('../img/image3.jpg');
-    background-size: cover;
-  }
   
   #home-heading {
     position: relative;
@@ -196,9 +192,11 @@ body {
   
 #authors img {
     margin-top: -50px; }
+
+
   #authors .card:hover {
     background: #3292a6;
     color: #fff; }
   #authors .fab {
-    color: #fff; }
+    color: #FFF; }
   
