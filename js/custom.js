@@ -97,8 +97,43 @@ $(".submit").click(function(){
 
 
 
+//modal
+$('#myModal').on('shown.bs.modal', function () {
+    $('#myInput').trigger('focus')
+  })
 
-//company date picker
 
-// Data Picker Initialization
-$('.datepicker').pickadate();
+
+  //carousel slider
+
+  
+    // Configure Slider
+$('.carousel').carousel({
+        interval: 3000,
+        pause: 'hover'
+});
+  
+
+//search dom
+let search = document.getElementById('search');
+let itemList = document.getElementById('items');
+
+// Filter event
+search.addEventListener('keyup', filterItems);
+
+// Filter Items
+function filterItems(e){
+    
+    var text = e.target.value.toLowerCase();
+    // Get lis
+    var items = itemList.getElementsByTagName('li');
+    
+    Array.from(items).forEach(function(item){
+      var itemName = item.firstChild.textContent;
+      if(itemName.toLowerCase().indexOf(text) != -1){
+        item.style.display = 'block';
+      } else {
+        item.style.display = 'none';
+      }
+    });
+  }

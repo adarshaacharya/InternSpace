@@ -6,9 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title> Intern Space</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!--Raleway Font-->
-    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 
     <!--Normalise css -->
     <link rel="stylesheet" type="text/css" href="vendor/normalize.css">
@@ -65,9 +64,9 @@
                                       </button>
     
                                       <div class="dropdown-menu">
-                                            <a class="dropdown-item" href="user.html">User</a>
+                                            <a class="dropdown-item" href="user.html" target="_blank">User</a>
                                             <div class="dropdown-divider"></div>
-                                            <a class="dropdown-item" href="company.html">Company</a>
+                                            <a class="dropdown-item" href="company.html" target="_blank">Company</a>
                                           </div>
                         </div>
 
@@ -79,6 +78,7 @@
                 </div>
             </div>
         </div>
+
 
 
 
@@ -116,6 +116,88 @@
     </div>
 
 
+
+    <br><br><br>  
+    
+  
+  <!-- SHOWCASE SLIDER -->
+  <section id="showcase">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item carousel-image-1 active">
+              <div class="container">
+                <div class="carousel-caption d-none d-sm-block text-right mb-5">
+                  <h1 class="display-3">Heading One</h1>
+                  <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, aperiam vel ullam deleniti reiciendis ratione
+                    quod aliquid inventore vero perspiciatis.</p>
+                  <a href="#" class="btn btn-danger btn-lg">Sign Up Now</a>
+                </div>
+              </div>
+            </div>
+    
+            <div class="carousel-item carousel-image-2">
+              <div class="container">
+                <div class="carousel-caption d-none d-sm-block mb-5">
+                  <h1 class="display-3">Heading Two</h1>
+                  <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, aperiam vel ullam deleniti reiciendis ratione
+                    quod aliquid inventore vero perspiciatis.</p>
+                  <a href="#" class="btn btn-primary btn-lg">Learn More</a>
+                </div>
+              </div>
+            </div>
+    
+            <div class="carousel-item carousel-image-3">
+              <div class="container">
+                <div class="carousel-caption d-none d-sm-block text-right mb-5">
+                  <h1 class="display-3">Heading Three</h1>
+                  <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, aperiam vel ullam deleniti reiciendis ratione
+                    quod aliquid inventore vero perspiciatis.</p>
+                  <a href="#" class="btn btn-success btn-lg">Learn More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+    
+          <a href="#myCarousel" data-slide="prev" class="carousel-control-prev">
+            <span class="carousel-control-prev-icon"></span>
+          </a>
+    
+          <a href="#myCarousel" data-slide="next" class="carousel-control-next">
+            <span class="carousel-control-next-icon"></span>
+          </a>
+        </div>
+      </section>
+    
+      <!--HOME ICON SECTION  -->
+      <section id="home-icons" class="py-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4 mb-4 text-center">
+              <i class="fa fa-cog fa-3x mb-2"></i>
+              <h3>Turning Gears</h3>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero, veniam.</p>
+            </div>
+            <div class="col-md-4 mb-4 text-center">
+              <i class="fa fa-cloud fa-3x mb-2"></i>
+              <h3>Sending Data</h3>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero, veniam.</p>
+            </div>
+            <div class="col-md-4 mb-4 text-center">
+              <i class="fa fa-cart-plus fa-3x mb-2"></i>
+              <h3>Making Money</h3>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero, veniam.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    
+    
+    
 <!--post section-->
 <section id="categories" class="p-2 bg-success text-white">
         <div class="container">
@@ -128,23 +210,25 @@
     </section>
     <!--Post search-->
 
-    <section class="p-3 animated jello">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <!--empty-->
-                </div>
-                <div class="col-md-6">
-                    <div class="input-group">
-                        <input type="search" placeholder="search.." class="form-control">
-                        <div class="input-group-append">
-                            <a href="#" class="btn btn-success">Search</a>
-                        </div>
-                    </div>
-                </div>
+
+<!--Post search-->
+<section class="p-3 animated jello">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <!--empty-->
+            </div>
+            <div class="col-md-6">
+                    <form class="form-inline md-form form-sm mt-0">
+                           
+                            <input class="form-control form-control-sm ml-3 w-50" type="text" id="search" placeholder="Search.." aria-label="Search">
+
+                            <button class="btn btn-success">Search</button>
+                        </form>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
 
     <section class="p-3">
@@ -170,7 +254,7 @@
                                 <tr>
                                     <td>1</td>
                                    
-                                    <td>Software Engineer</td>
+                                    <td id="items">Software Engineer</td>
                                    
                                     <td>
                                         <a href="details.html" target="_blank" class="btn btn-outline-success btn-sm">Details<i class="fa fa-arrow-alt-circle-right"></i></a>
@@ -179,7 +263,7 @@
                                 <tr>
                                     <td>2</td>
                                     
-                                    <td>Web Developer</td>
+                                    <td id="items">Web Developer</td>
                                     
                                     <td>
                                         <a href="#" class="btn btn-outline-success btn-sm">Details<i class="fa fa-arrow-alt-circle-right"></i></a>
@@ -188,7 +272,7 @@
                                 <tr>
                                     <td>3</td>
                                    
-                                    <td>Android or iOS Developer</td>
+                                    <td id="items">Android or iOS Developer</td>
                                    
                                     <td>
                                         <a href="#" class="btn btn-outline-success btn-sm">Details<i class="fa fa-arrow-alt-circle-right"></i></a>
@@ -197,7 +281,7 @@
                                 <tr>
                                     <td>4</td>
                                     
-                                    <td>SEO Manager</td>
+                                    <td id="items">SEO Manager</td>
                                  
                                     <td>
                                         <a href="#" class="btn btn-outline-success btn-sm">Details<i class="fa fa-arrow-alt-circle-right"></i></a>
@@ -206,7 +290,7 @@
                                 <tr>
                                     <td>5</td>
                                    
-                                    <td>Sales and Marketing</td>
+                                    <td id="items">Sales and Marketing</td>
                                 
                                     <td>
                                         <a href="#" class="btn btn-outline-success btn-sm">Details<i class="fa fa-arrow-alt-circle-right"></i></a>
@@ -215,7 +299,7 @@
                                 <tr>
                                     <td>6</td>
                                    
-                                    <td>Banking</td>
+                                    <td id="items">Banking</td>
                                    
                                     <td>
                                         <a href="#" class="btn btn-outline-success btn-sm">Details<i class="fa fa-arrow-alt-circle-right"></i></a>
@@ -224,7 +308,7 @@
                                 <tr>
                                     <td>7</td>
                                   
-                                    <td>Movie and Cinematography</td>
+                                    <td id="items">Movie and Cinematography</td>
                                    
                                     <td>
                                         <a href="#" class="btn btn-outline-success btn-sm">Details<i class="fa fa-arrow-alt-circle-right"></i></a>
@@ -233,7 +317,7 @@
                                 <tr>
                                     <td>8</td>
                                    
-                                    <td>Management</td>
+                                    <td id="items">Management</td>
                                    
                                     <td>
                                         <a href="#" class="btn btn-outline-success btn-sm">Details<i class="fa fa-arrow-alt-circle-right"></i></a>
@@ -243,7 +327,7 @@
                                 <tr>
                                         <td>9</td>
                                        
-                                        <td>Data Analyst</td>
+                                        <td id="items">Data Analyst</td>
                                        
                                         <td>
                                             <a href="#" class="btn btn-outline-success btn-sm">Details<i class="fa fa-arrow-alt-circle-right"></i></a>
@@ -299,14 +383,7 @@
     <script src="js/custom.js"></script>
 
 
-    <script>
-        //JS Code Here
-
-    $(".form_datetime").datetimepicker({
-        format: "dd MM yyyy - hh:ii"
-    });
-          
-    </script>
+   
 
 </body>
 
